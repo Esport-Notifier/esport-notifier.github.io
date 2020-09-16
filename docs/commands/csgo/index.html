@@ -113,7 +113,7 @@
               class="menu-item menu-button">
 
               
-<a class="button" href="https://discord.com/">
+<a class="button" href="https://discord.com/api/oauth2/authorize?client_id=733658957461323877&permissions=109632&scope=bot">
   
   Invite
   
@@ -240,8 +240,18 @@
 
 <h2 id="live-matches-feed">Live Matches Feed</h2>
 
-<p>To enable the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live enable</code>.
-To disable the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live disable</code>.</p>
+<div class="important">
+  <strong>Important:</strong> 
+  To make it work, you need to setup the channel for it or no data from the matches will be sent.
+</div>
+
+<ul>
+  <li>
+    <p>To setup the channel for the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live_channel [channel_ID]</code>.</p>
+  </li>
+  <li>To enable the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live enable</code>.</li>
+  <li>To disable the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live disable</code>.</li>
+</ul>
 
 <h2 id="matches">Matches</h2>
 
