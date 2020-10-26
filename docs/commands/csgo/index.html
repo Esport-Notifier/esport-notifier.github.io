@@ -268,13 +268,20 @@
 
 <div class="important">
   <strong>Important:</strong> 
-  To make it work, you need to setup the channel for it or no data from the matches will be sent.
+  To make it work, you need to setup the channel for it otherwise no data from the matches will be sent.
 </div>
 
 <ul>
-  <li>
-    <p>To setup the channel for the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live_channel [channel_ID]</code>.</p>
-  </li>
+  <li>To setup the channel for the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live_channel [channel_ID]</code>.</li>
+</ul>
+
+<div class="important">
+  <strong>Important:</strong> 
+  [channel_ID] is the 18 digits number that can be obtained with Developer Mode. The command above does not work with the name of the channel. See this <a href="https://techswift.org/2020/09/17/how-to-enable-developer-mode-in-discord/">tutorial</a> to enable developer mode.
+  You can then get the ID of the channel by right-clicking on the name of the channel.
+</div>
+
+<ul>
   <li>To enable the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live enable</code>.</li>
   <li>To disable the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live disable</code>.</li>
 </ul>
@@ -299,7 +306,7 @@
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">running</code></td>
-      <td>Show the match score of ongoing matches</td>
+      <td>Show the score of ongoing matches</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">upcoming</code></td>
@@ -371,7 +378,8 @@
       <p class="site-info">
         
         
-        <span class="copyright">Powered by Jekyll and Github Pages</span>
+        <span class="copyright">Powered by Jekyll and Github Pages
+</span>
         
         
       </p><!-- .site-info -->
