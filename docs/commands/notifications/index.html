@@ -3,7 +3,7 @@
 
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>CS:GO -
+    <title>Notifications -
         Esport Notifier</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138690289-3"></script>
@@ -194,7 +194,7 @@
 
 <ul class="docs-submenu">
   
-    <li class="docs-menu-item current">
+    <li class="docs-menu-item">
       <a href="/docs/commands/csgo/">CS:GO</a>
     </li>
   
@@ -214,7 +214,7 @@
       <a href="/docs/commands/r6siege/">Rainbow 6 Siege</a>
     </li>
   
-    <li class="docs-menu-item">
+    <li class="docs-menu-item current">
       <a href="/docs/commands/notifications/">Notifications</a>
     </li>
   
@@ -261,23 +261,17 @@
     <article class="post type-docs">
       <div class="post-inside">
         <header class="post-header">
-          <h1 class="post-title line-left">CS:GO</h1>
+          <h1 class="post-title line-left">Notifications</h1>
         </header><!-- .post-header -->
         <div class="post-content">
-          <h2 id="help">Help</h2>
-
-<p><strong>Command</strong> : <code class="language-plaintext highlighter-rouge">.en csgo help</code></p>
-
-<h2 id="live-matches-feed">Live Matches Feed</h2>
-
-<div class="important">
+          <div class="important">
   <strong>Important:</strong> 
-  To make it work, you need to setup the channel for it otherwise no data from the matches will be sent.
+  To make it work, you need to setup the channel for it otherwise no notifications will be sent.
 </div>
 
-<ul>
-  <li>To setup the channel for the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live_channel [channel_ID]</code>.</li>
-</ul>
+<h2 id="notifications-channel">Notifications channel</h2>
+
+<p>Command : <code class="language-plaintext highlighter-rouge">.en notifications channel [channel_ID]</code></p>
 
 <div class="important">
   <strong>Important:</strong> 
@@ -285,75 +279,43 @@
   You can then get the ID of the channel by right-clicking on the name of the channel.
 </div>
 
-<ul>
-  <li>To enable the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live enable</code>.</li>
-  <li>To disable the live feed : <code class="language-plaintext highlighter-rouge">.en csgo live disable</code>.</li>
-</ul>
+<h2 id="game-notifications">Game notifications</h2>
 
-<h2 id="matches">Matches</h2>
+<p>The commands that are in this table start with <code class="language-plaintext highlighter-rouge">.en notifications</code>.</p>
 
-<p>The commands that are in this table start with <code class="language-plaintext highlighter-rouge">.en csgo matches</code>.</p>
-
-<p>Available options :</p>
+<p>Available options:</p>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
+      <th>Parameter</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">past</code></td>
-      <td>Show the results of the matches of the past seven days</td>
+      <td><code class="language-plaintext highlighter-rouge">csgo</code></td>
+      <td><code class="language-plaintext highlighter-rouge">enable</code>/<code class="language-plaintext highlighter-rouge">disable</code></td>
+      <td>Enable or disable notifications for CSGO</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">running</code></td>
-      <td>Show the score of ongoing matches</td>
+      <td><code class="language-plaintext highlighter-rouge">lol</code></td>
+      <td><code class="language-plaintext highlighter-rouge">enable</code>/<code class="language-plaintext highlighter-rouge">disable</code></td>
+      <td>Enable or disable notifications for LOL</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">upcoming</code></td>
-      <td>Show the schedule of matches for the next two days</td>
+      <td><code class="language-plaintext highlighter-rouge">dota2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">enable</code>/<code class="language-plaintext highlighter-rouge">disable</code></td>
+      <td>Enable or disable notifications for Dota2</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">r6siege</code></td>
+      <td><code class="language-plaintext highlighter-rouge">enable</code>/<code class="language-plaintext highlighter-rouge">disable</code></td>
+      <td>Enable or disable notifications for R6Siege</td>
     </tr>
   </tbody>
 </table>
-
-<h2 id="events">Events</h2>
-
-<p>The commands that are in this table start with <code class="language-plaintext highlighter-rouge">.en csgo events</code>.</p>
-
-<p>Available options :</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">past</code></td>
-      <td>Show the results of the matches of the past seven days</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">running</code></td>
-      <td>Show the match score of ongoing matches</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">upcoming</code></td>
-      <td>Show the schedule of matches for the next two days</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="world-ranking">World Ranking</h2>
-
-<p>Show the <a href="https://www.htlv.org">HLTV</a> Top 30 World Ranking of the week.</p>
-
-<p><strong>Command</strong>  : <code class="language-plaintext highlighter-rouge">.en csgo ranking</code></p>
-
 
           
           
