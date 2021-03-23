@@ -271,7 +271,7 @@
 <h2 id="invite-the-bot">Invite the bot</h2>
 
 <ul>
-  <li>As an administrator of the server, you can invite the bot by clicking on this <a href="">link</a>.
+  <li>As an administrator of the server, you can invite the bot by clicking on this <a href="https://discord.com/api/oauth2/authorize?client_id=733658957461323877&amp;permissions=93248&amp;scope=bot">link</a>.
 You will be invited to connect to your Discord account to choose which server you want the bot on.</li>
 </ul>
 
@@ -280,8 +280,7 @@ You will be invited to connect to your Discord account to choose which server yo
 <h2 id="setup-the-timezone">Setup the timezone</h2>
 
 <ul>
-  <li>Because no one is living in the same area of the planet, you need to choose the right timezone for your bot so
-he can display correct hours for matches…</li>
+  <li>You have to setup the timezone according to yours to get correct schedules.</li>
 </ul>
 
 <p>The command is <code class="language-plaintext highlighter-rouge">.en timezone [parameter]</code></p>
@@ -290,21 +289,66 @@ he can display correct hours for matches…</li>
 
 <hr />
 
-<h2 id="live-feed-of-csgo-matches">Live feed of CS:GO Matches</h2>
+<h2 id="notifications">Notifications</h2>
+
+<p>You can choose if you want to receive notifications for the following games : LoL, CS:GO, Dota2, R6Siege
+This is disabled by default.</p>
 
 <ul>
-  <li>You can choose if you want to be pinged at the end of a round for the live score.</li>
+  <li>First, you have to setup the channel where notifications can be set :</li>
 </ul>
 
-<p>By default, this option is enabled.</p>
+<p><code class="language-plaintext highlighter-rouge">.en notifications channel [channel_ID]</code></p>
 
-<p>To enable the live feed:</p>
+<div class="important">
+  <strong>Important:</strong> 
+  [channel_ID] is the 18 digits number that can be obtained with Developer Mode. The command above does not work with the name of the channel. See this <a href="https://techswift.org/2020/09/17/how-to-enable-developer-mode-in-discord/">tutorial</a> to enable developer mode.
+  You can then get the ID of the channel by right-clicking on the name of the channel.
+</div>
 
-<p><code class="language-plaintext highlighter-rouge">.en csgo live disable</code></p>
+<ul>
+  <li>Then, you can enable notications for the games you want:</li>
+</ul>
 
-<p>To disable the live feed:</p>
+<p><code class="language-plaintext highlighter-rouge">.en notifications [game] enable</code></p>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">game</code> with <code class="language-plaintext highlighter-rouge">csgo</code>, <code class="language-plaintext highlighter-rouge">lol</code>, <code class="language-plaintext highlighter-rouge">r6siege</code>, <code class="language-plaintext highlighter-rouge">dota2</code>.</p>
+
+<ul>
+  <li>You can also disable notifications:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">.en notifications [game] disable</code></p>
+
+<h2 id="live-feed-of-csgo-matches">Live feed of CS:GO Matches</h2>
+
+<p>You can choose if you want to be pinged at the end of a round of a CS:GO Match.</p>
+
+<p>By default, this option is disabled because you have to setup the channel for it.</p>
+
+<ul>
+  <li>First, you have to setup the channel for the live feed :</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">.en csgo live_channel [channel_ID]</code></p>
+
+<div class="important">
+  <strong>Important:</strong> 
+  [channel_ID] is the 18 digits number that can be obtained with Developer Mode. The command above does not work with the name of the channel. See this <a href="https://techswift.org/2020/09/17/how-to-enable-developer-mode-in-discord/">tutorial</a> to enable developer mode.
+  You can then get the ID of the channel by right-clicking on the name of the channel.
+</div>
+
+<ul>
+  <li>Then, you can enable the live feed:</li>
+</ul>
 
 <p><code class="language-plaintext highlighter-rouge">.en csgo live enable</code></p>
+
+<ul>
+  <li>To disable the live feed:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">.en csgo live disable</code></p>
 
           
           
